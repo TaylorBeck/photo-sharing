@@ -1,0 +1,8 @@
+{
+  "name": "photo-sharing",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "6101e3ad"
+}
