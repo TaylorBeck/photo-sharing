@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">photoshare</string>
+    <string name="title_activity_main">photoshare</string>
+    <string name="package_name">me.taylorbeck.photoshare</string>
+    <string name="custom_url_scheme">me.taylorbeck.photoshare</string>
+</resources>

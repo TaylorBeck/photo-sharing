@@ -42,10 +42,17 @@ export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 /* End Setup Firebase */
 
-const app = createApp(App)
-  .use(IonicVue)
-  .use(router);
+/* Load app on new user sign in / sign out */
+let app: any;
 
-router.isReady().then(() => {
-  app.mount("#app");
+auth.onAuthStateChanged(async () => {
+  if (!app) {
+    app = createApp(App)
+      .use(IonicVue)
+      .use(router);
+
+    router.isReady().then(() => {
+      app.mount("#app");
+    });
+  }
 });
